@@ -4,211 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designing Layout using Html & Css</title>
+    <title>Designing Card</title>
     <style>
         * {
             margin: 0;
             padding: 0;
-        }
-
-        :root {
-            --primary-color: black;
-            --text-color: #f4f3f6ec;
-            --secondary-color: #c7f16ecc;
+            /* box-sizing: border-box; */
         }
 
         body {
-            background-color: gray;
-            overflow: hidden;
-        }
-
-        /* header {
-            position: sticky;
-            top: 0;
+            background-color: rgb(142, 157, 157);
+            padding: 50px;
             display: flex;
-            background-color: var(--primary-color);
-            border: 2px solid black;
-            height: 40px;
-            width: 80vw;
-            justify-content: space-evenly;
-            margin-left: 100px;
-            padding: 5px;
-            border-radius: 20px;
-
-        } */
-
-        .navbar {
-            background-color: var(--primary-color);
-            display: flex;
-            padding-left: 10px;
-            /* justify-content: space-evenly; */
-            border: 2px solid yellow;
-            height: 40px;
-            width: 80vw;
-            margin-left: 100px;
-            padding: 5px;
-            border-radius: 20px;
-        }
-
-        .navbar ul {
-            align-items: center;
-            display: flex;
-
-        }
-
-        .navbar li {
-            float: left;
-            list-style: none;
-            padding: 10px;
-        }
-
-        .navbar li a {
-            text-decoration: none;
-            color: white;
-            padding: 3px;
-        }
-
-        .navbar input {
-            float: right;
-            margin-left: 600px;
-            padding: 4px 0;
-            border: 2px solid yellow;
-            border-radius: 4px;
-            text-align: center;
-            color: goldenrod
-        }
-
-        .navbar li a:hover {
-            color: rgb(255, 0, 89);
         }
 
         .container {
-            border: 2px solid black;
-            height: 90vh;
-            margin: 0 25px;
-            padding: 20px 0px 15px;
-            background-color: black;
+            width: 444px;
+            height: 574px;
+            border: 2px solid gray;
             border-radius: 7px;
+            background-color: rgb(195, 195, 195);
+            margin: 10px;
             overflow: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
         }
 
-        .box-section {
-            margin: 0 1rem;
-            height: 350px;
+        h1 {
+            margin: 5px;
+            text-align: center;
+            color: green;
         }
 
-        .box-img {
-            height: 300px;
-            background-size: cover;
+        .image {
+            padding: 10px;
         }
 
-        .box-section p {
-            color: blue;
+        .image img {
+            border-radius: 7px;
+            width: 420px;
+        }
+
+        .capsules{
+            padding: 0 150px;
+        }
+
+        .capsules span{
+            border: 3px solid rgb(178, 241, 178);
+            padding: 0px 4px;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        h2{
+            text-decoration: underline;
+            padding-left: 10px;
+        }
+
+        p{
+            padding: 10px;
+            font-family: sans-serif;
+        }
+
+        .btn{
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .btn button{
+            padding: 4px;
+            border-radius: 9px;
+            background-color: goldenrod;
+            border: none;
             cursor: pointer;
         }
 
-        .box-section p:hover {
-            color: maroon;
-            transition: all ease;
+        .btn button:hover{
+            background-color: rgb(255, 200, 127);
         }
-
-        
     </style>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <input type="text" placeholder="Search Here">
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="container">
-            <div class="box-section">
-                <div class="box-img"><img src="download.jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="download (1).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="download (2).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="download (3).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="download (4).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images.jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (1).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (2).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (3).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (4).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (5).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (6).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (7).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (8).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (9).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (10).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (11).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
-            <div class="box-section">
-                <div class="box-img"><img src="images (12).jpeg" alt=""></div>
-                <p>See More</p>
-            </div>
+    <div class="container">
+        <h1>Environmental Guide</h1>
+        <div class="image">
+            <img src="card.png">
         </div>
-    </main>
-
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="nature">
+            <h2>About Nature</h2>
+            <p>“There is a pleasure in the pathless woods,
+                There is a rapture on the lonely shore,
+                There is society, where none intrudes,
+                By the deep sea, and music in its roar:
+                I love not man the less, but Nature more”</p>
+        </div>
+        <div class="btn">
+            <button>Explore More</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Human & Nature</h1>
+        <div class="image">
+            <img src="card3.png">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="nature">
+            <h2>Relationship</h2>
+            <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
+        </div>
+        <div class="btn">
+            <button>Explore More</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Childhood Diaries</h1>
+        <div class="image">
+            <img src="card2.png">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="nature">
+            <h2>Child Nature</h2>
+            <p>“What do parents owe their young that is more important than a warm and trusting connection to the Earth…?”</p>
+        </div>
+        <div class="btn">
+            <button>Explore More</button>
+        </div>
+    </div>
 </body>
 
 </html>
