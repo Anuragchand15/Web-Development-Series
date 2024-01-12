@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+
+        body {
+            background-color: rgb(142, 157, 157);
+            padding: 50px;
+            display: flex;
+        }
+
+        .container {
+            width: 444px;
+            height: 574px;
+            border: 2px solid gray;
+            border-radius: 7px;
+            background-color: rgb(195, 195, 195);
+            margin: 10px;
+            overflow: auto;
+        }
+
+        h1 {
+            margin: 5px;
+            text-align: center;
+            color: green;
+        }
+
+        .image {
+            padding: 10px;
+        }
+
+        .image img {
+            border-radius: 7px;
+            width: 420px;
+        }
+
+        .capsules{
+            padding: 0 150px;
+        }
+
+        .capsules span{
+            border: 3px solid rgb(178, 241, 178);
+            padding: 0px 4px;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        h2{
+            text-decoration: underline;
+            padding-left: 10px;
+        }
+
+        p{
+            padding: 10px;
+            font-family: sans-serif;
+        }
+
+        .btn{
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .btn button{
+            padding: 4px;
+            border-radius: 9px;
+            background-color: goldenrod;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn button:hover{
+            background-color: rgb(255, 200, 127);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Environmental Guide</h1>
+        <div class="image">
+            <img src="card.png">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="nature">
+            <h2>About Nature</h2>
+            <p>“There is a pleasure in the pathless woods,
+                There is a rapture on the lonely shore,
+                There is society, where none intrudes,
+                By the deep sea, and music in its roar:
+                I love not man the less, but Nature more”</p>
+        </div>
+        <div class="btn">
+            <button>Explore More</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Human & Nature</h1>
+        <div class="image">
+            <img src="card3.png">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="nature">
+            <h2>Relationship</h2>
+            <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
+        </div>
+        <div class="btn">
+            <button>Explore More</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Childhood Diaries</h1>
+        <div class="image">
+            <img src="card2.png">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="nature">
+            <h2>Child Nature</h2>
+            <p>“What do parents owe their young that is more important than a warm and trusting connection to the Earth…?”</p>
+        </div>
+        <div class="btn">
+            <button>Explore More</button>
+        </div>
+    </div>
+</body>
+
+</html>
